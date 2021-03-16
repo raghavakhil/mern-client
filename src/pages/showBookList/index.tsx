@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { fetchBook } from "../../redux/booklist/actions";
 import { Logout } from "../logout/index";
 import BookCard from "./BookCard";
+import {Books} from '../../Constants/index';
 
 interface stateConfig {
   books: any;
@@ -39,7 +40,7 @@ const ShowBookList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     axios
-      .get("http://localhost:8082/api/books")
+      .get('https://jsonplaceholder.typicode.com/users')
       .then((book) => {
         dispatch(fetchBook(book.data));
       })

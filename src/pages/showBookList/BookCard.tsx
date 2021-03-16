@@ -21,11 +21,8 @@ const H3 = styled.h3`
   padding: 10px 0 10px 0;
 `;
 const H2 = styled.h2`
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 400;
-`;
-const P = styled.p`
-  font-weight: 300;
 `;
 const BookCard = (props: bookDetailsConfig) => {
   const { formBook } = props;
@@ -37,9 +34,8 @@ const BookCard = (props: bookDetailsConfig) => {
         alt=""
       />
       <DescDiv>
-        <H2>{formBook.title}</H2>
-        <H3>{formBook.author}</H3>
-        <P>{formBook.description}</P>
+        <H2>{formBook.name}</H2>
+        <H3>{formBook.lng}</H3>
       </DescDiv>
     </CardContainerStyle>
   );

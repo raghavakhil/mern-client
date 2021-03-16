@@ -60,7 +60,7 @@ const CreateBook = () => {
     };
 
     axios
-      .post("http://localhost:8082/api/books", data)
+      .post("https://jsonplaceholder.typicode.com/users", data)
       .then((res) => {
         setFormBook({
           title: "",
