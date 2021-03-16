@@ -35,7 +35,7 @@ const BookCard = (props: bookDetailsConfig) => {
       />
       <DescDiv>
         <H2>{formBook.name}</H2>
-        <H3>{formBook.lng}</H3>
+        <H3>{formBook.company.catchPhrase}</H3>
       </DescDiv>
     </CardContainerStyle>
   );
